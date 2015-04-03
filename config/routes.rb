@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get 'about' => 'static_pages#about'
   get 'signup' => 'users#new'
   
+  resources :users # for working with request /user/1 or user/2
+  
   
 
   # The priority is based upon order of creation: first created -> highest priority.
