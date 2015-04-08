@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
+gem 'will_paginate' # for pagination
+gem 'bootstrap-will_paginate' # for bootstrap pagination
 
+gem 'faker' # for adding fake users
 gem 'bcrypt'
 # for hashing password with bcrypt function
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
