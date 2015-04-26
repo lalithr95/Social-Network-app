@@ -1,0 +1,15 @@
+<h1>Social Network App</h1>
+
+<p>
+  Hi <%= @user.name %>,
+</p>
+<p>
+Welcome to the Social Network App ! Click on below Link to activate your account.    
+</p>
+<%= link_to "Activate", edit_account_activation_url("Hello",email: @user.email) %>
+
+<p>
+Thanks !
+Regards,
+Lalith
+</p>
