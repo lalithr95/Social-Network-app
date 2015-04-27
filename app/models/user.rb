@@ -12,7 +12,9 @@ class User < ActiveRecord::Base
     validates :password,length: { minimum: 6 }, allow_blank: true
     has_secure_password 
     # this will add secure password , confirmation password while creating object,also for authentication
-    
+    def feed
+        Micropost.where("user_id = ?",id)
+    end
     def User.new_token
         SecureRandom.urlsafe_base64
     end
